@@ -2,6 +2,7 @@ package learn.kursivee.com.common.di
 
 import dagger.Module
 import dagger.Provides
+import learn.kursivee.com.common.services.DependencyService
 import learn.kursivee.com.common.services.UserDataService
 import javax.inject.Singleton
 
@@ -10,7 +11,13 @@ class CommonModule {
 
     @Provides
     @Singleton
-    fun getUserDataService() : UserDataService {
-        return UserDataService()
+    fun getUserDataService(dependencyService: DependencyService) : UserDataService {
+        return UserDataService(dependencyService)
+    }
+
+    @Provides
+    @Singleton
+    fun getDependencyService() : DependencyService {
+        return DependencyService()
     }
 }

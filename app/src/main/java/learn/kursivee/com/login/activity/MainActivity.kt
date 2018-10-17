@@ -16,7 +16,8 @@ class MainActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         getCommonComponent().inject(this)
-        userDataService.name = "My Name"
+        println("#### ${userDataService.getSomething()}")
+        userDataService.name = userDataService.getSomething()
         submitBtn.setOnClickListener {
             NextActivity.start(this)
         }

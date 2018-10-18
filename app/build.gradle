@@ -9,7 +9,7 @@ apply plugin: 'kotlin-kapt'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "learn.kursivee.com.login"
+        applicationId "com.kursivee.learn.login"
         minSdkVersion 22
         targetSdkVersion 28
         versionCode 1

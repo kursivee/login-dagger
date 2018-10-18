@@ -8,7 +8,6 @@ import javax.inject.Singleton
 
 @Singleton
 @Component(modules = [
-    CommonModule::class,
     ApiModule::class
 ])
 interface CommonComponent {

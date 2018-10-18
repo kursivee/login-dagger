@@ -24,7 +24,8 @@ class CommonModule {
     }
 
     @Provides
-    fun getApiClient(retrofit: Retrofit) : MockyClient {
+    @Singleton
+    fun getMockyClient(retrofit: Retrofit) : MockyClient {
         return MockyClient(retrofit)
     }
 }

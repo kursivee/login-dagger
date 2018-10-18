@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="learn.kursivee.com.login">
 
+
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
             android:name="learn.kursivee.com.app.App"
             android:allowBackup="true"

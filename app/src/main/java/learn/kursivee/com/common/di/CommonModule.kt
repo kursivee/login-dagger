@@ -2,9 +2,10 @@ package learn.kursivee.com.common.di
 
 import dagger.Module
 import dagger.Provides
-import learn.kursivee.com.common.services.ApiClient
+import learn.kursivee.com.common.api.MockyClient
 import learn.kursivee.com.common.services.DependencyService
 import learn.kursivee.com.common.services.UserDataService
+import retrofit2.Retrofit
 import javax.inject.Singleton
 
 @Module
@@ -23,7 +24,7 @@ class CommonModule {
     }
 
     @Provides
-    fun getApiClient() : ApiClient {
-        return ApiClient()
+    fun getApiClient(retrofit: Retrofit) : MockyClient {
+        return MockyClient(retrofit)
     }
 }

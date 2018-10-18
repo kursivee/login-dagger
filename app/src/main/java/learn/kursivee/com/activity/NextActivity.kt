@@ -1,4 +1,4 @@
-package learn.kursivee.com.login.activity
+package learn.kursivee.com.activity
 
 import android.content.Context
 import android.content.Intent
@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.support.design.widget.Snackbar
 
 import kotlinx.android.synthetic.main.activity_next.*
-import learn.kursivee.com.common.BaseActivity
 import learn.kursivee.com.common.services.UserDataService
 import learn.kursivee.com.login.R
 import javax.inject.Inject

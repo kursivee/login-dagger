@@ -1,4 +1,4 @@
-package learn.kursivee.com.app
+package learn.kursivee.com
 
 import android.app.Application
 import learn.kursivee.com.common.di.CommonComponent

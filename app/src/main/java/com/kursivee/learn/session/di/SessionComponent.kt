@@ -9,7 +9,6 @@ import dagger.Subcomponent
 ])
 @SessionScoped
 interface SessionComponent {
-    fun inject(activity: MainActivity)
     fun inject(activity: HomeActivity)
 
     @Subcomponent.Builder

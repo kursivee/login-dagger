@@ -1,5 +1,6 @@
 package com.kursivee.learn.base
 
+import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.kursivee.learn.App
 import com.kursivee.learn.di.ApplicationComponent
@@ -7,11 +8,10 @@ import com.kursivee.learn.session.di.SessionComponent
 
 open class BaseSessionActivity : AppCompatActivity() {
 
-    fun getApplicationComponent() : ApplicationComponent {
-        return (application as App).applicationComponent
-    }
+    lateinit var sessionComponent: SessionComponent
 
-    fun getSessionComponent() : SessionComponent {
-        return (application as App).sessionComponent
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        sessionComponent =  (application as App).plusSessionComponent()
     }
 }

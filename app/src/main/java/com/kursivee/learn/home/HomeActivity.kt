@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.os.Parcelable
+import android.widget.Button
 import android.widget.TextView
 import com.kursivee.learn.base.BaseSessionActivity
 import com.kursivee.learn.login.LoginParcel
@@ -23,7 +24,6 @@ class HomeActivity : BaseSessionActivity() {
                 intent.putExtra("parcel", it)
             }
             context.startActivity(intent)
-
         }
     }
 
@@ -37,5 +37,8 @@ class HomeActivity : BaseSessionActivity() {
         }
         findViewById<TextView>(R.id.user).text = sessionService.userData.name
         findViewById<TextView>(R.id.token).text = sessionService.userData.token
+        findViewById<Button>(R.id.logoutBtn).setOnClickListener {
+            logout()
+        }
     }
 }

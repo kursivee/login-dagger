@@ -9,4 +9,8 @@ data class SessionService @Inject constructor(var userData: UserData) {
         userData.name = name
         userData.token = token
     }
+
+    fun end() {
+        userData.clear()
+    }
 }

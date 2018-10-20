@@ -21,4 +21,8 @@ class App : Application() {
             ?: applicationComponent.sessionBuilder().build()
     }
 
+    fun clearSessionComponent() {
+        sessionComponent = null
+    }
+
 }

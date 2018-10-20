@@ -16,12 +16,9 @@ class App : Application() {
     }
 
     fun plusSessionComponent() : SessionComponent {
-        // Yes I know this is NOT the kotfu way of nulls
-        // Will update in next commit...I have to cook dinner lol
-        if(sessionComponent == null) {
-            sessionComponent = applicationComponent.sessionBuilder().build()
-        }
-        return sessionComponent!!
+        // I think this is how you do it ??
+        return this.sessionComponent
+            ?: applicationComponent.sessionBuilder().build()
     }
 
 }

@@ -7,6 +7,7 @@ import dagger.Component
 @Component(modules = [
     ApplicationModule::class
 ])
+@ApplicationScoped
 interface ApplicationComponent {
     fun inject(activity: MainActivity)
     fun sessionBuilder() : SessionComponent.Builder

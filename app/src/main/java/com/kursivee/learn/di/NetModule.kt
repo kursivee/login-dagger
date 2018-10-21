@@ -1,22 +1,21 @@
-package com.kursivee.learn.common.api.di
+package com.kursivee.learn.di
 
 import com.jakewharton.retrofit2.adapter.kotlin.coroutines.experimental.CoroutineCallAdapterFactory
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
-import javax.inject.Singleton
+import retrofit2.converter.moshi.MoshiConverterFactory
 
 @Module
-class ApiModule {
+class NetModule {
 
+    @ApplicationScoped
     @Provides
-    @Singleton
     fun getRetrofit() : Retrofit {
         return Retrofit
             .Builder()
-            .baseUrl("http://www.mocky.io/v2/")
-            .addConverterFactory(GsonConverterFactory.create())
+            .baseUrl("http://192.168.0.9:8080/")
+            .addConverterFactory(MoshiConverterFactory.create())
             .addCallAdapterFactory(CoroutineCallAdapterFactory())
             .build()
     }

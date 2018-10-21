@@ -1,15 +1,28 @@
 package com.kursivee.learn
 
 import android.app.Application
-import com.kursivee.learn.common.di.CommonComponent
-import com.kursivee.learn.common.di.DaggerCommonComponent
+import com.kursivee.learn.di.ApplicationComponent
+import com.kursivee.learn.di.DaggerApplicationComponent
+import com.kursivee.learn.session.di.SessionComponent
 
 class App : Application() {
-    lateinit var commonComponent: CommonComponent
+
+    lateinit var applicationComponent: ApplicationComponent
+    private var sessionComponent: SessionComponent? = null
 
     override fun onCreate() {
         super.onCreate()
-        commonComponent = DaggerCommonComponent
-            .create()
+        applicationComponent = DaggerApplicationComponent.create()
     }
+
+    fun plusSessionComponent() : SessionComponent {
+        // I think this is how you do it ??
+        return this.sessionComponent
+            ?: applicationComponent.sessionBuilder().build()
+    }
+
+    fun clearSessionComponent() {
+        sessionComponent = null
+    }
+
 }

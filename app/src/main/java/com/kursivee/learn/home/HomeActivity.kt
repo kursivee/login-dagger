@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.os.Parcelable
 import android.widget.Button
 import android.widget.TextView
-import com.kursivee.learn.base.BaseSessionActivity
+import com.kursivee.learn.common.activity.BaseSessionActivity
 import com.kursivee.learn.login.LoginParcel
 import com.kursivee.learn.login.R
 import com.kursivee.learn.session.SessionService

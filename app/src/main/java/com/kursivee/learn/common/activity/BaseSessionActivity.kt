@@ -1,10 +1,9 @@
-package com.kursivee.learn.base
+package com.kursivee.learn.common.activity
 
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.kursivee.learn.App
-import com.kursivee.learn.di.ApplicationComponent
 import com.kursivee.learn.login.MainActivity
 import com.kursivee.learn.session.di.SessionComponent
 

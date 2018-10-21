@@ -1,6 +1,6 @@
-package com.kursivee.learn.session
+package com.kursivee.learn.common.session
 
-import com.kursivee.learn.session.di.SessionScoped
+import com.kursivee.learn.common.session.di.SessionScoped
 import javax.inject.Inject
 
 // Thinking about just removing data class all together

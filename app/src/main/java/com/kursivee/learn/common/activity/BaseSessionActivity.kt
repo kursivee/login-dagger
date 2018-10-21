@@ -5,9 +5,9 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.kursivee.learn.App
 import com.kursivee.learn.login.MainActivity
-import com.kursivee.learn.session.di.SessionComponent
+import com.kursivee.learn.common.session.di.SessionComponent
 
-open class BaseSessionActivity : AppCompatActivity() {
+open class BaseSessionActivity : BaseActivity() {
 
     lateinit var sessionComponent: SessionComponent
 

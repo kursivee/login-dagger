@@ -20,7 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.kursivee.learn.home.HomeActivity">
+        <activity android:name="com.kursivee.learn.secured.home.HomeActivity">
         </activity>
     </application>
 

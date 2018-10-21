@@ -1,7 +1,6 @@
-package com.kursivee.learn.session.di
+package com.kursivee.learn.common.session.di
 
-import com.kursivee.learn.home.HomeActivity
-import com.kursivee.learn.login.MainActivity
+import com.kursivee.learn.secured.home.HomeActivity
 import dagger.Subcomponent
 
 @Subcomponent(modules = [

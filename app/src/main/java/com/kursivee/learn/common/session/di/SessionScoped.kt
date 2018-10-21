@@ -1,4 +1,4 @@
-package com.kursivee.learn.session.di
+package com.kursivee.learn.common.session.di
 
 import javax.inject.Scope
 

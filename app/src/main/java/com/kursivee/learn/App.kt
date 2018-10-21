@@ -3,7 +3,7 @@ package com.kursivee.learn
 import android.app.Application
 import com.kursivee.learn.di.ApplicationComponent
 import com.kursivee.learn.di.DaggerApplicationComponent
-import com.kursivee.learn.session.di.SessionComponent
+import com.kursivee.learn.common.session.di.SessionComponent
 
 class App : Application() {
 

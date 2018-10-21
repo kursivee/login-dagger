@@ -1,6 +1,6 @@
 package com.kursivee.learn.di
 
-import com.kursivee.learn.session.di.SessionComponent
+import com.kursivee.learn.common.session.di.SessionComponent
 import dagger.Module
 
 @Module(subcomponents = [

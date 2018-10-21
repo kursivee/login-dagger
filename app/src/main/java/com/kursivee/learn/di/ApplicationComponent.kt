@@ -1,13 +1,13 @@
 package com.kursivee.learn.di
 
-import com.kursivee.learn.common.activity.BaseSessionActivity
 import com.kursivee.learn.login.MainActivity
-import com.kursivee.learn.session.di.SessionComponent
+import com.kursivee.learn.common.session.di.SessionComponent
 import dagger.Component
 
 @Component(modules = [
     ApplicationModule::class,
-    NetModule::class
+    NetModule::class,
+    JsonModule::class
 ])
 @ApplicationScoped
 interface ApplicationComponent {

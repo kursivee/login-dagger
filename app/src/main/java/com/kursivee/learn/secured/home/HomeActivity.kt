@@ -1,4 +1,4 @@
-package com.kursivee.learn.home
+package com.kursivee.learn.secured.home
 
 import android.content.Context
 import android.content.Intent
@@ -9,7 +9,7 @@ import android.widget.TextView
 import com.kursivee.learn.common.activity.BaseSessionActivity
 import com.kursivee.learn.login.LoginParcel
 import com.kursivee.learn.login.R
-import com.kursivee.learn.session.SessionService
+import com.kursivee.learn.common.session.SessionService
 import javax.inject.Inject
 
 class HomeActivity : BaseSessionActivity() {
